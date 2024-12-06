@@ -1,0 +1,12 @@
+GET http://localhost:8080/api/bugs
+Accept: application/json
+
+###
+GET http://localhost:8080/api/seasons
+Accept: application/json
+
+###
+GET http://localhost:8080/api/flowers
+Accept: application/json
+
+###

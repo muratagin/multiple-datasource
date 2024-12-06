@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres
+    container_name: multiple_datasource_db
+    environment:
+      POSTGRES_DB: multiple_datasource_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Test1234
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./db/initial-data.sql:/docker-entrypoint-initdb.d/initial-data.sql
+
+volumes:
+  postgres_data:

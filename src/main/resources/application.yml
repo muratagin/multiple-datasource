@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: multipledatasource
+datasources:
+  dataSources:
+    first:
+      url: "jdbc:postgresql://localhost:5432/forest"
+      username: "postgres"
+      password: "Test1234"
+      schema: "public"
+    second:
+      url: "jdbc:postgresql://localhost:5432/farm"
+      username: "postgres"
+      password: "Test1234"
+      schema: "public"
+    third:
+      url: "jdbc:postgresql://localhost:5432/farm"
+      username: "postgres"
+      password: "Test1234"
+      schema: "field"
